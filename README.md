@@ -21,6 +21,10 @@ Quick start
    npm run type-check
    npm run lint
 
+4. Run tests:
+
+   npm test
+
 Important notes
 
 - The contact API route calls a server-side mailer implementation at `lib/mailer.ts`. In production configure `SENDGRID_API_KEY` and `SENDGRID_FROM_EMAIL`.
