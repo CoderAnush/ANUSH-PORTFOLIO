@@ -14,6 +14,7 @@ export default function Header() {
           <Link href="/">Home</Link>
           <Link href="/projects">Projects</Link>
           <Link href="/blog">Blog</Link>
+          <Link href="/contact">Contact</Link>
           <button
             aria-label="Toggle theme"
             className="p-2 rounded"
