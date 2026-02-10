@@ -41,7 +41,7 @@ export default function AIChatbot() {
             {/* Header */}
             <div className="bg-navy p-4 border-b border-slate">
               <h3 className="text-white font-bold text-lg">AI Assistant</h3>
-              <p className="text-gray text-sm">Ask me about Anush's work</p>
+              <p className="text-gray text-sm">Ask me about Anush&apos;s work</p>
             </div>
 
             {/* Quick Actions */}

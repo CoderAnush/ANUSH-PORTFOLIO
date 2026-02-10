@@ -2,7 +2,7 @@
 import Link from 'next/link'
 import { useTheme } from 'next-themes'
 import { Sun, Moon, Menu, X } from 'lucide-react'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 
 const navLinks = [
@@ -16,6 +16,11 @@ const navLinks = [
 export default function Header() {
   const { theme, setTheme } = useTheme()
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [mounted, setMounted] = useState(false)
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
 
   return (
     <header className="fixed top-0 left-0 right-0 z-40 bg-charcoal/90 backdrop-blur-md border-b border-slate">
@@ -37,13 +42,15 @@ export default function Header() {
                 {link.label}
               </Link>
             ))}
-            <button
-              aria-label="Toggle theme"
-              className="p-2 rounded-lg bg-navy hover:bg-slate text-gray hover:text-skyBlue transition-all"
-              onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-            >
-              {theme === 'dark' ? <Sun size={18} /> : <Moon size={18} />}
-            </button>
+            {mounted && (
+              <button
+                aria-label="Toggle theme"
+                className="p-2 rounded-lg bg-navy hover:bg-slate text-gray hover:text-skyBlue transition-all"
+                onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+              >
+                {theme === 'dark' ? <Sun size={18} /> : <Moon size={18} />}
+              </button>
+            )}
           </nav>
 
           {/* Mobile Menu Button */}

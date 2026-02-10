@@ -1,4 +1,5 @@
 'use client'
+/* eslint-disable react/no-unknown-property */
 import { Canvas, useFrame } from '@react-three/fiber'
 import { OrbitControls, Sphere, MeshDistortMaterial } from '@react-three/drei'
 import { useRef, useMemo } from 'react'
