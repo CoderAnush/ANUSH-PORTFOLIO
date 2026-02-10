@@ -1,0 +1,33 @@
+---
+title: 'Hello World: Building with Next.js and MDX'
+date: '2023-10-27'
+excerpt: 'A first look at how this blog is built using Next.js App Router and MDX.'
+---
+
+# Hello World
+
+Welcome to my new portfolio blog! This is a sample post to demonstrate the power of **MDX** with **Next.js**.
+
+## Why MDX?
+
+MDX allows you to write Markdown with embedded React components. This means you can:
+
+- Use custom components like `<Callout />` or `<Button />` directly in your markdown.
+- maintain a consistent design system.
+- Write interactive content easily.
+
+## Code Snippet Example
+
+Here is a quick look at how we fetch posts:
+
+```typescript
+import fs from 'fs'
+import path from 'path'
+import matter from 'gray-matter'
+
+const postsDirectory = path.join(process.cwd(), 'data/blog')
+```
+
+## Conclusion
+
+Stay tuned for more updates on frontend development, performance optimization, and design systems!
