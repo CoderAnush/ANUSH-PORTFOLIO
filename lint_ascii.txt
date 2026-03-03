@@ -1,0 +1,6 @@
+
+> anush-portfolio@0.1.0 lint
+> next lint
+
+Failed to load config "prettier" to extend from.
+Referenced from: C:\Users\anush\Desktop\PORTFOLIO\.eslintrc.json

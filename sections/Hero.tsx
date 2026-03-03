@@ -1,34 +1,82 @@
 'use client'
+import Link from 'next/link'
+import dynamic from 'next/dynamic'
+import { ArrowDown } from 'lucide-react'
 import { motion } from 'framer-motion'
-import { Button } from '../components/ui/Button'
-import React from 'react'
+import { getSiteMetadata } from '../data/site'
+
+const HeroScene = dynamic(() => import('../components/3d/HeroScene'), { ssr: false })
 
 export default function Hero() {
+  const site = getSiteMetadata()
+  
   return (
-    <section className="relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-sky-400 via-primary to-violet-600 opacity-40 -z-10" />
-      <div className="min-h-[60vh] flex items-center">
-        <div className="max-w-4xl mx-auto text-center py-20">
-          <motion.h1
-            className="text-5xl font-extrabold text-white"
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.1 }}
+    <section className="relative h-screen w-full flex items-center justify-center overflow-hidden bg-navy">
+      <HeroScene />
+
+      <div className="z-10 text-center px-4 max-w-5xl">
+        <motion.h1
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="text-5xl md:text-8xl font-extrabold tracking-tight mb-4 text-white"
+        >
+          {site.name}
+        </motion.h1>
+
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+          className="text-2xl md:text-3xl text-skyBlue mb-6 font-semibold"
+        >
+          {site.title}
+        </motion.p>
+
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
+          className="text-lg text-gray mb-10 max-w-3xl mx-auto leading-relaxed"
+        >
+          {site.description}
+        </motion.p>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.5, ease: "easeOut" }}
+          className="flex gap-4 justify-center flex-wrap"
+        >
+          <Link
+            href="#projects"
+            className="px-8 py-3 rounded-lg bg-skyBlue text-navy font-bold hover:bg-accent hover:shadow-glow transition-all"
           >
-            Hi, I’m Anush. I build accessible, high-performance interfaces.
-          </motion.h1>
-          <motion.p className="mt-4 text-white/90" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.3 }}>
-            I’m a frontend engineer who focuses on performance, UX, and clean architecture.
-          </motion.p>
-          <div className="mt-8 flex gap-4 justify-center">
-            <Button as="a" href="#projects">View Work</Button>
-            <Button variant="ghost">Contact</Button>
-          </div>
-          <div className="mt-12 flex justify-center">
-            <div className="animate-bounce text-white/80">↓</div>
-          </div>
-        </div>
+            View Projects
+          </Link>
+          <Link
+            href="/contact"
+            className="px-8 py-3 rounded-lg border-2 border-skyBlue text-skyBlue hover:bg-skyBlue hover:text-navy font-semibold transition-all"
+          >
+            Get In Touch
+          </Link>
+          <Link
+            href="/resume"
+            className="px-8 py-3 rounded-lg border border-gray text-gray hover:bg-slate hover:border-white transition-all"
+          >
+            Resume
+          </Link>
+        </motion.div>
       </div>
+
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1, duration: 1 }}
+        className="absolute bottom-10 animate-bounce"
+      >
+        <ArrowDown className="w-8 h-8 text-skyBlue" />
+      </motion.div>
     </section>
   )
 }
