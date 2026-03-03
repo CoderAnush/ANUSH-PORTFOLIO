@@ -8,6 +8,7 @@ export type Project = {
   demo?: string
   category: string
   featured?: boolean
+  status?: 'ongoing' | 'completed'
 }
 
 const PROJECTS: Project[] = [
