@@ -1,0 +1,134 @@
+/* GSAP Animation Styles */
+
+/* Split Text Line Wrapper */
+:global(.split-line) {
+  overflow: hidden;
+  display: block;
+}
+
+/* Smooth Scroll Wrapper */
+:global(#smooth-wrapper) {
+  overflow: hidden;
+}
+
+:global(#smooth-content) {
+  overflow: visible;
+}
+
+/* Text Animation Base */
+:global(.animate-text) {
+  will-change: transform, opacity;
+}
+
+/* Card Animations */
+:global(.animate-card) {
+  will-change: transform, opacity;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+/* Section Transitions */
+:global(.section) {
+  will-change: transform, opacity;
+}
+
+:global(.section-title) {
+  will-change: transform, opacity, text-shadow;
+}
+
+/* Parallax Elements */
+:global([data-speed]) {
+  will-change: transform;
+}
+
+/* Floating Elements */
+:global([data-float]) {
+  will-change: transform;
+}
+
+/* Project Cards */
+:global(.project-card) {
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+
+/* Tech Cards */
+:global(.tech-card) {
+  will-change: transform, opacity;
+}
+
+/* About Grid Animation */
+:global(.about-grid) {
+  will-change: transform;
+}
+
+:global(.about-grid) > * {
+  will-change: transform, opacity;
+}
+
+/* Skills List */
+:global(.skillsList li) {
+  will-change: transform, opacity;
+}
+
+/* Contact Content */
+:global(.contact-content) > * {
+  will-change: transform, opacity;
+}
+
+/* Disable animations on mobile for performance */
+@media (max-width: 1024px) {
+  :global(.animate-text),
+  :global(.animate-card),
+  :global([data-speed]),
+  :global([data-float]) {
+    animation: none !important;
+    will-change: auto;
+  }
+}
+
+/* Smooth scrolling enhancements */
+:global(html) {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :global(html) {
+    scroll-behavior: auto;
+  }
+
+  :global(*) {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Custom Scrollbar */
+:global(::-webkit-scrollbar) {
+  width: 10px;
+}
+
+:global(::-webkit-scrollbar-track) {
+  background: #0a0e17;
+}
+
+:global(::-webkit-scrollbar-thumb) {
+  background: linear-gradient(180deg, #5eead4, #22d3ee);
+  border-radius: 5px;
+}
+
+:global(::-webkit-scrollbar-thumb:hover) {
+  background: linear-gradient(180deg, #22d3ee, #5eead4);
+}
+
+/* Selection */
+:global(::selection) {
+  background: rgba(94, 234, 212, 0.3);
+  color: #ffffff;
+}
+
+:global(::-moz-selection) {
+  background: rgba(94, 234, 212, 0.3);
+  color: #ffffff;
+}

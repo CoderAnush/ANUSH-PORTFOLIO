@@ -1,9 +1,5 @@
 import '../styles/globals.css'
 import type { Metadata, Viewport } from 'next'
-import Providers from '../components/layout/Providers'
-import Header from '../components/layout/Header'
-import Footer from '../components/layout/Footer'
-import ScrollManager from '../components/ui/ScrollManager'
 
 export const metadata: Metadata = {
   title: 'ANUSH RAMESH — AI/ML Engineer & Data Scientist',
@@ -27,7 +23,7 @@ export const metadata: Metadata = {
 }
 
 export const viewport: Viewport = {
-  themeColor: '#64ffda',
+  themeColor: '#101010',
   width: 'device-width',
   initialScale: 1,
   maximumScale: 1,
@@ -36,15 +32,9 @@ export const viewport: Viewport = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className="bg-navy">
-        <Providers>
-          <ScrollManager />
-          <Header />
-          {children}
-          <Footer />
-        </Providers>
+      <body className="bg-darkBg" style={{ margin: 0, padding: 0 }}>
+        {children}
       </body>
     </html>
   )
 }
-
