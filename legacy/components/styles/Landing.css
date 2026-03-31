@@ -131,7 +131,7 @@
 }
 
 .scroll-down-cta {
-  position: absolute;
+  position: fixed;
   bottom: 40px;
   left: 50%;
   transform: translateX(-50%);
@@ -140,7 +140,8 @@
   align-items: center;
   gap: 12px;
   cursor: pointer;
-  z-index: 10;
+  z-index: 1000;
+  pointer-events: auto;
 }
 
 .scroll-down-cta span {
