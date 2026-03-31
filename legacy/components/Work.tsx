@@ -9,7 +9,7 @@ const projects = [
     title: 'Movie Recommendation System',
     category: 'Content Recommendation Engine',
     tools: 'Python, scikit-learn, Pandas, NLTK',
-    image: '/images/movie-rec.svg',
+    image: '/images/movie-rec.png',
     link: 'https://github.com/CoderAnush/MOVIE-RECOMMENDATION-SYSTEM'
   },
   {
@@ -30,7 +30,7 @@ const projects = [
     title: '3D Interactive Portfolio',
     category: 'Generative AI & 3D Web',
     tools: 'Next.js, Three.js, TypeScript, GSAP',
-    image: '/images/portfolio.svg',
+    image: '/images/portfolio.jpg',
     link: 'https://github.com/CoderAnush/ANUSH-PORTFOLIO'
   },
   {
