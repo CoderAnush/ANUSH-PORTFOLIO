@@ -1,17 +1,61 @@
 <svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#f093fb;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#f5576c;stop-opacity:1" />
+    <linearGradient id="nnGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
     </linearGradient>
+    <filter id="glow2">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
   </defs>
-  <rect width="400" height="300" fill="url(#grad2)"/>
-  <text x="200" y="80" font-size="32" font-weight="bold" fill="white" text-anchor="middle" font-family="Arial">Neural Network</text>
-  <text x="200" y="120" font-size="32" font-weight="bold" fill="white" text-anchor="middle" font-family="Arial">Compiler</text>
-  <text x="200" y="170" font-size="16" fill="rgba(255,255,255,0.8)" text-anchor="middle" font-family="Arial">Graph Optimization & Automata</text>
-  <text x="200" y="200" font-size="14" fill="rgba(255,255,255,0.7)" text-anchor="middle" font-family="Arial">DFA • IR • Benchmark Analysis</text>
-  <rect x="80" y="220" width="30" height="30" fill="rgba(255,255,255,0.4)" rx="5"/>
-  <rect x="145" y="220" width="30" height="30" fill="rgba(255,255,255,0.4)" rx="5"/>
-  <rect x="210" y="220" width="30" height="30" fill="rgba(255,255,255,0.4)" rx="5"/>
-  <rect x="275" y="220" width="30" height="30" fill="rgba(255,255,255,0.4)" rx="5"/>
+  <rect width="400" height="300" fill="url(#nnGrad)"/>
+  
+  <!-- Decorative background -->
+  <circle cx="350" cy="60" r="25" fill="rgba(255,255,255,0.05)"/>
+  <circle cx="50" cy="240" r="35" fill="rgba(255,255,255,0.05)"/>
+  
+  <!-- Title -->
+  <text x="200" y="50" font-size="26" font-weight="bold" fill="white" text-anchor="middle" font-family="Arial">Neural Network</text>
+  <text x="200" y="80" font-size="26" font-weight="bold" fill="white" text-anchor="middle" font-family="Arial">Compiler</text>
+  
+  <!-- Graph visualization - neural network nodes -->
+  <!-- Input layer -->
+  <circle cx="60" cy="140" r="6" fill="#00ff88" filter="url(#glow2)"/>
+  <circle cx="60" cy="160" r="6" fill="#00ff88" filter="url(#glow2)"/>
+  <circle cx="60" cy="180" r="6" fill="#00ff88" filter="url(#glow2)"/>
+  
+  <!-- Hidden layer 1 -->
+  <circle cx="140" cy="120" r="6" fill="#00d4ff" filter="url(#glow2)"/>
+  <circle cx="140" cy="150" r="6" fill="#00d4ff" filter="url(#glow2)"/>
+  <circle cx="140" cy="180" r="6" fill="#00d4ff" filter="url(#glow2)"/>
+  
+  <!-- Hidden layer 2 -->
+  <circle cx="220" cy="130" r="6" fill="#ffd700" filter="url(#glow2)"/>
+  <circle cx="220" cy="170" r="6" fill="#ffd700" filter="url(#glow2)"/>
+  
+  <!-- Output layer -->
+  <circle cx="300" cy="150" r="6" fill="#ff6b9d" filter="url(#glow2)"/>
+  
+  <!-- Connections -->
+  <line x1="66" y1="140" x2="134" y2="120" stroke="rgba(0,255,136,0.4)" stroke-width="1.5"/>
+  <line x1="66" y1="140" x2="134" y2="150" stroke="rgba(0,255,136,0.4)" stroke-width="1.5"/>
+  <line x1="66" y1="160" x2="134" y2="150" stroke="rgba(0,255,136,0.4)" stroke-width="1.5"/>
+  <line x1="66" y1="160" x2="134" y2="180" stroke="rgba(0,255,136,0.4)" stroke-width="1.5"/>
+  <line x1="66" y1="180" x2="134" y2="180" stroke="rgba(0,255,136,0.4)" stroke-width="1.5"/>
+  
+  <line x1="146" y1="120" x2="214" y2="130" stroke="rgba(0,212,255,0.4)" stroke-width="1.5"/>
+  <line x1="146" y1="150" x2="214" y2="170" stroke="rgba(0,212,255,0.4)" stroke-width="1.5"/>
+  <line x1="146" y1="180" x2="214" y2="170" stroke="rgba(0,212,255,0.4)" stroke-width="1.5"/>
+  
+  <line x1="226" y1="130" x2="294" y2="150" stroke="rgba(255,215,0,0.4)" stroke-width="1.5"/>
+  <line x1="226" y1="170" x2="294" y2="150" stroke="rgba(255,215,0,0.4)" stroke-width="1.5"/>
+  
+  <!-- Tech stack -->
+  <rect x="30" y="225" width="340" height="55" fill="rgba(0,0,0,0.3)" rx="8"/>
+  <text x="200" y="248" font-size="13" font-weight="bold" fill="white" text-anchor="middle" font-family="Arial">PyTorch • DFA • Graph Optimization</text>
+  <text x="200" y="268" font-size="11" fill="rgba(255,255,255,0.8)" text-anchor="middle" font-family="Arial">Compiler Design & Automata Theory</text>
 </svg>
