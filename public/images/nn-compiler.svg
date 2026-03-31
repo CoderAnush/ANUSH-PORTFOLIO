@@ -1,61 +1,83 @@
 <svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="nnGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="compilerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
       <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
     </linearGradient>
-    <filter id="glow2">
-      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+    <filter id="glowCompiler">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
       <feMerge>
         <feMergeNode in="coloredBlur"/>
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
   </defs>
-  <rect width="400" height="300" fill="url(#nnGrad)"/>
+  <rect width="400" height="300" fill="url(#compilerGrad)"/>
   
-  <!-- Decorative background -->
-  <circle cx="350" cy="60" r="25" fill="rgba(255,255,255,0.05)"/>
-  <circle cx="50" cy="240" r="35" fill="rgba(255,255,255,0.05)"/>
+  <!-- Background decorative elements -->
+  <circle cx="30" cy="40" r="25" fill="rgba(255,255,255,0.08)"/>
+  <circle cx="370" cy="270" r="35" fill="rgba(255,255,255,0.08)"/>
   
   <!-- Title -->
-  <text x="200" y="50" font-size="26" font-weight="bold" fill="white" text-anchor="middle" font-family="Arial">Neural Network</text>
-  <text x="200" y="80" font-size="26" font-weight="bold" fill="white" text-anchor="middle" font-family="Arial">Compiler</text>
+  <text x="200" y="45" font-size="26" font-weight="bold" fill="white" text-anchor="middle" font-family="Arial">Compiler</text>
+  <text x="200" y="70" font-size="26" font-weight="bold" fill="white" text-anchor="middle" font-family="Arial">Pipeline</text>
   
-  <!-- Graph visualization - neural network nodes -->
-  <!-- Input layer -->
-  <circle cx="60" cy="140" r="6" fill="#00ff88" filter="url(#glow2)"/>
-  <circle cx="60" cy="160" r="6" fill="#00ff88" filter="url(#glow2)"/>
-  <circle cx="60" cy="180" r="6" fill="#00ff88" filter="url(#glow2)"/>
+  <!-- Compile stages visualization -->
+  <!-- Stage 1: Model (Input) -->
+  <rect x="20" y="100" width="60" height="50" fill="rgba(0,255,136,0.15)" stroke="#00ff88" stroke-width="2" rx="4"/>
+  <circle cx="50" cy="115" r="4" fill="#00ff88" filter="url(#glowCompiler)"/>
+  <circle cx="50" cy="135" r="4" fill="#00ff88" filter="url(#glowCompiler)"/>
+  <text x="50" y="155" font-size="10" fill="#00ff88" text-anchor="middle" font-family="Arial" font-weight="bold">Model</text>
   
-  <!-- Hidden layer 1 -->
-  <circle cx="140" cy="120" r="6" fill="#00d4ff" filter="url(#glow2)"/>
-  <circle cx="140" cy="150" r="6" fill="#00d4ff" filter="url(#glow2)"/>
-  <circle cx="140" cy="180" r="6" fill="#00d4ff" filter="url(#glow2)"/>
+  <!-- Arrow 1 -->
+  <line x1="80" y1="125" x2="105" y2="125" stroke="rgba(255,255,255,0.4)" stroke-width="2"/>
+  <polygon points="105,125 98,120 98,130" fill="rgba(255,255,255,0.4)"/>
   
-  <!-- Hidden layer 2 -->
-  <circle cx="220" cy="130" r="6" fill="#ffd700" filter="url(#glow2)"/>
-  <circle cx="220" cy="170" r="6" fill="#ffd700" filter="url(#glow2)"/>
+  <!-- Stage 2: Graph -->
+  <rect x="105" y="100" width="60" height="50" fill="rgba(0,212,255,0.15)" stroke="#00d4ff" stroke-width="2" rx="4"/>
+  <line x1="120" y1="115" x2="150" y2="115" stroke="#00d4ff" opacity="0.6"/>
+  <circle cx="135" cy="130" r="3" fill="#00d4ff" filter="url(#glowCompiler)"/>
+  <line x1="120" y1="135" x2="150" y2="135" stroke="#00d4ff" opacity="0.6"/>
+  <text x="135" y="155" font-size="10" fill="#00d4ff" text-anchor="middle" font-family="Arial" font-weight="bold">Graph</text>
   
-  <!-- Output layer -->
-  <circle cx="300" cy="150" r="6" fill="#ff6b9d" filter="url(#glow2)"/>
+  <!-- Arrow 2 -->
+  <line x1="165" y1="125" x2="190" y2="125" stroke="rgba(255,255,255,0.4)" stroke-width="2"/>
+  <polygon points="190,125 183,120 183,130" fill="rgba(255,255,255,0.4)"/>
   
-  <!-- Connections -->
-  <line x1="66" y1="140" x2="134" y2="120" stroke="rgba(0,255,136,0.4)" stroke-width="1.5"/>
-  <line x1="66" y1="140" x2="134" y2="150" stroke="rgba(0,255,136,0.4)" stroke-width="1.5"/>
-  <line x1="66" y1="160" x2="134" y2="150" stroke="rgba(0,255,136,0.4)" stroke-width="1.5"/>
-  <line x1="66" y1="160" x2="134" y2="180" stroke="rgba(0,255,136,0.4)" stroke-width="1.5"/>
-  <line x1="66" y1="180" x2="134" y2="180" stroke="rgba(0,255,136,0.4)" stroke-width="1.5"/>
+  <!-- Stage 3: DFA -->
+  <rect x="190" y="100" width="60" height="50" fill="rgba(255,215,0,0.15)" stroke="#ffd700" stroke-width="2" rx="4"/>
+  <circle cx="205" cy="115" r="4" fill="#ffd700" filter="url(#glowCompiler)"/>
+  <circle cx="235" cy="115" r="4" fill="#ffd700" filter="url(#glowCompiler)"/>
+  <line x1="205" y1="115" x2="235" y2="115" stroke="#ffd700" opacity="0.6"/>
+  <circle cx="220" cy="135" r="4" fill="#ffd700" filter="url(#glowCompiler)"/>
+  <text x="220" y="155" font-size="10" fill="#ffd700" text-anchor="middle" font-family="Arial" font-weight="bold">DFA</text>
   
-  <line x1="146" y1="120" x2="214" y2="130" stroke="rgba(0,212,255,0.4)" stroke-width="1.5"/>
-  <line x1="146" y1="150" x2="214" y2="170" stroke="rgba(0,212,255,0.4)" stroke-width="1.5"/>
-  <line x1="146" y1="180" x2="214" y2="170" stroke="rgba(0,212,255,0.4)" stroke-width="1.5"/>
+  <!-- Arrow 3 -->
+  <line x1="250" y1="125" x2="275" y2="125" stroke="rgba(255,255,255,0.4)" stroke-width="2"/>
+  <polygon points="275,125 268,120 268,130" fill="rgba(255,255,255,0.4)"/>
   
-  <line x1="226" y1="130" x2="294" y2="150" stroke="rgba(255,215,0,0.4)" stroke-width="1.5"/>
-  <line x1="226" y1="170" x2="294" y2="150" stroke="rgba(255,215,0,0.4)" stroke-width="1.5"/>
+  <!-- Stage 4: Optimized -->
+  <rect x="275" y="100" width="60" height="50" fill="rgba(255,107,107,0.15)" stroke="#ff6b6b" stroke-width="2" rx="4"/>
+  <circle cx="290" cy="115" r="3" fill="#ff6b6b" filter="url(#glowCompiler)"/>
+  <circle cx="305" cy="130" r="3" fill="#ff6b6b" filter="url(#glowCompiler)"/>
+  <line x1="290" y1="115" x2="305" y2="130" stroke="#ff6b6b" opacity="0.6"/>
+  <text x="305" y="155" font-size="10" fill="#ff6b6b" text-anchor="middle" font-family="Arial" font-weight="bold">Opt</text>
   
-  <!-- Tech stack -->
-  <rect x="30" y="225" width="340" height="55" fill="rgba(0,0,0,0.3)" rx="8"/>
-  <text x="200" y="248" font-size="13" font-weight="bold" fill="white" text-anchor="middle" font-family="Arial">PyTorch • DFA • Graph Optimization</text>
-  <text x="200" y="268" font-size="11" fill="rgba(255,255,255,0.8)" text-anchor="middle" font-family="Arial">Compiler Design & Automata Theory</text>
+  <!-- Stage labels with small text -->
+  <text x="50" y="175" font-size="9" fill="rgba(255,255,255,0.6)" text-anchor="middle" font-family="Arial">Input</text>
+  <text x="135" y="175" font-size="9" fill="rgba(255,255,255,0.6)" text-anchor="middle" font-family="Arial">Parse</text>
+  <text x="220" y="175" font-size="9" fill="rgba(255,255,255,0.6)" text-anchor="middle" font-family="Arial">Analyze</text>
+  <text x="305" y="175" font-size="9" fill="rgba(255,255,255,0.6)" text-anchor="middle" font-family="Arial">Output</text>
+  
+  <!-- Bottom info box -->
+  <rect x="20" y="205" width="360" height="70" fill="rgba(0,0,0,0.4)" rx="6"/>
+  
+  <!-- Benchmark indicator -->
+  <text x="35" y="230" font-size="11" font-weight="bold" fill="rgba(255,255,255,0.8)" font-family="Arial">Performance Boost:</text>
+  <rect x="35" y="235" width="150" height="6" fill="rgba(255,255,255,0.2)" rx="3"/>
+  <rect x="35" y="235" width="112" height="6" fill="#76b347" rx="3"/>
+  <text x="195" y="241" font-size="11" font-weight="bold" fill="#76b347" font-family="Arial">75% Faster</text>
+  
+  <!-- Tech stack at bottom -->
+  <text x="35" y="260" font-size="11" font-weight="bold" fill="white" font-family="Arial">PyTorch • DFA • Graph Optimization • Benchmarking</text>
 </svg>
