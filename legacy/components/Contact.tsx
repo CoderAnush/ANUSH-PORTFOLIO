@@ -8,6 +8,9 @@ const Contact = () => {
     <div className="contact-section section-container" id="contact">
       <div className="contact-container">
         <h3>Contact</h3>
+        <div className="cta-banner contact-cta">
+          🚀 Actively seeking AI/ML internships and full-time opportunities
+        </div>
         <div className="contact-flex">
           <div className="contact-box">
             <h4>Connect</h4>

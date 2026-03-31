@@ -9,6 +9,7 @@ const projects = [
     title: 'Movie Recommendation System',
     category: 'Content Recommendation Engine',
     tools: 'Python, scikit-learn, Pandas, NLTK',
+    description: 'Built a hybrid recommendation system using ML and fuzzy logic to deliver personalized movie suggestions, improving relevance based on user preferences.',
     image: '/images/movie-rec.png',
     link: 'https://github.com/CoderAnush/MOVIE-RECOMMENDATION-SYSTEM'
   },
@@ -16,6 +17,7 @@ const projects = [
     title: 'Live Sign Language Transcript',
     category: 'Computer Vision & Deep Learning',
     tools: 'Python, MediaPipe, LSTM, OpenCV',
+    description: 'Developed an LSTM-based neural network leveraging MediaPipe to translate sign language gestures into text in real-time, bridging communication gaps.',
     image: '/images/sign-lang.svg',
     link: 'https://github.com/CoderAnush/LIVE-SIGN-LANGUAGE-TRANSCRIPT'
   },
@@ -23,6 +25,7 @@ const projects = [
     title: 'Cricket Match Predictor',
     category: 'Predictive Machine Learning',
     tools: 'Python, XGBoost, Pandas, Numpy',
+    description: 'Engineered an XGBoost classification model to predict live T20 cricket match outcomes, providing real-time probability estimates with high accuracy.',
     image: '/images/cricket.svg',
     link: 'https://github.com/CoderAnush/ML-PROJECT'
   },
@@ -30,13 +33,15 @@ const projects = [
     title: '3D Interactive Portfolio',
     category: 'Generative AI & 3D Web',
     tools: 'Next.js, Three.js, TypeScript, GSAP',
+    description: 'Designed an immersive web experience with custom 3D models and animations, showcasing technical expertise in frontend performance optimization.',
     image: '/images/portfolio.jpg',
     link: 'https://github.com/CoderAnush/ANUSH-PORTFOLIO'
   },
   {
     title: 'AutoIntern AI',
     category: 'AI Job Aggregation Platform',
-    tools: 'FastAPI, Scrapy, React, PostgreSQL, Redis, Elasticsearch, BERT',
+    tools: 'FastAPI, Scrapy, React, PostgreSQL, Redis, Elasticsearch, BERT',    
+    description: 'Architected a scalable semantic search platform aggregating thousands of job listings, helping students match with internships using NLP context.',
     image: '/images/autointern.svg',
     link: 'https://github.com/CoderAnush/AutoIntern'
   },
@@ -44,20 +49,23 @@ const projects = [
     title: 'Neural Network Compiler',
     category: 'Compiler Design & Automata Theory',
     tools: 'Python, PyTorch, DFA, Graph Optimization, Benchmarking',
+    description: 'Implemented a custom compiler leveraging Deterministic Finite Automata to optimize neural network execution graphs, reducing latency and memory overhead.',
     image: '/images/nn-compiler.svg',
     link: 'https://github.com/CoderAnush/Compiling-Neural-Network-Models-Using-Automata-Theory'
   },
   {
     title: 'IoT Fire Suppression System',
     category: 'Industrial IoT & Embedded Systems',
-    tools: 'ESP32, Raspberry Pi Pico, Arduino, MQTT, HTML/CSS/JavaScript',
+    tools: 'ESP32, Raspberry Pi Pico, Arduino, MQTT, HTML/CSS/JavaScript',      
+    description: 'Constructed an automated hazard monitoring system using MQTT protocols for real-time alerting and physical fire suppression deployment.',
     image: '/images/iot-fire.svg',
     link: 'https://github.com/CoderAnush/IoT-Based-Indoor-Hazard-Monitoring-and-Automated-Fire-Suppression-System-Using-MQTT'
   },
   {
     title: 'Industrial IoT Dashboard',
     category: 'Real-Time Monitoring & ML',
-    tools: 'React, FastAPI, Python, Machine Learning, Real-time Analytics',
+    tools: 'React, FastAPI, Python, Machine Learning, Real-time Analytics',     
+    description: 'Deployed an interactive full-stack dashboard parsing live IoT sensor data, enabling predictive maintenance through integrated ML insights.',
     image: '/images/openlab-dashboard.svg',
     link: 'https://github.com/CoderAnush/OPENLAB-PROJECT'
   }
@@ -134,8 +142,9 @@ const Work = () => {
                         <h4>{project.title}</h4>
                         <p className="carousel-category">
                           {project.category}
-                        </p>
-                        <div className="carousel-tools">
+                        </p>                        <p className="carousel-description" style={{ fontSize: '14px', color: '#ccc', margin: '15px 0', lineHeight: '1.5' }}>
+                          {project.description}
+                        </p>                        <div className="carousel-tools">
                           <span className="tools-label">Tools & Features</span>
                           <p>{project.tools}</p>
                         </div>

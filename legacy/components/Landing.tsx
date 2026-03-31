@@ -19,6 +19,9 @@ const Landing = ({ children }: PropsWithChildren) => {
               <br />
               <span>RAMESH</span>
             </h1>
+            <div className="cta-banner">
+              🚀 Actively seeking AI/ML internships and full-time opportunities
+            </div>
           </div>
           <div className="landing-info">
             <h2 className="landing-info-h2">

@@ -18,7 +18,7 @@ const Scene = () => {
   const canvasDiv = useRef<HTMLDivElement | null>(null);
   const hoverDivRef = useRef<HTMLDivElement>(null);
   const sceneRef = useRef(new THREE.Scene());
-  const { setLoading } = useLoading();
+const { setLoading, setIsLoading } = useLoading();
 
   const [character, setChar] = useState<THREE.Object3D | null>(null);
   const [webglError, setWebglError] = useState<boolean>(false);
@@ -37,9 +37,10 @@ const Scene = () => {
           antialias: true,
         });
       } catch (e) {
-        console.warn("WebGL context creation failed, skipping 3D scene:", e);
+        console.warn("WebGL context creation failed, skipping 3D scene:", e);   
         setWebglError(true);
-        setLoading(false);
+        setLoading(100);
+        setIsLoading(false);
         return;
       }
 

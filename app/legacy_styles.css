@@ -2141,24 +2141,31 @@ div.resume-button span {
 }
 
 .carousel-slide {
+  width: 100%;
   min-width: 100%;
+  max-width: 100%;
   flex-shrink: 0;
   box-sizing: border-box;
   padding: 50px 0;
+  overflow: hidden;
 }
 
 .carousel-content {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
-  gap: 60px;
+  gap: 40px;
   width: 100%;
+  box-sizing: border-box;
 }
 
 .carousel-info {
-  flex: 1;
   display: flex;
+  flex-direction: row;
   gap: 30px;
   align-items: flex-start;
+  min-width: 0; 
+  width: 100%;
 }
 
 .carousel-number h3 {
@@ -2173,6 +2180,7 @@ div.resume-button span {
   display: flex;
   flex-direction: column;
   gap: 8px;
+  width: 100%;
 }
 
 .carousel-details h4 {
@@ -2186,6 +2194,15 @@ div.resume-button span {
   color: #adacac;
   margin: 0;
   font-size: 16px;
+}
+
+.carousel-description {
+  font-size: 15px;
+  color: #ccc;
+  margin: 15px 0;
+  line-height: 1.6;
+  white-space: normal;
+  word-wrap: break-word;
 }
 
 .carousel-tools {
@@ -2208,10 +2225,11 @@ div.resume-button span {
 }
 
 .carousel-image-wrapper {
-  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
+  min-width: 0; 
+  width: 100%;
 }
 
 /* ── Navigation Arrows ── */
@@ -2331,6 +2349,7 @@ div.resume-button span {
   max-width: 100%;
   max-height: 400px;
   border-radius: 8px;
+  object-fit: contain;
 }
 
 /* ── Responsive ── */
@@ -2372,8 +2391,10 @@ div.resume-button span {
 
 @media only screen and (max-width: 1025px) {
   .carousel-content {
-    flex-direction: column;
-    gap: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      width: 100%;
   }
 
   .carousel-info {
@@ -2785,4 +2806,25 @@ body {
 
 @keyframes fadeIn {
   to { opacity: 1; }
+}
+
+.cta-banner {
+  color: var(--accentColor);
+  font-size: 16px;
+  margin-top: 15px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  max-width: 400px;
+}
+
+.contact-cta {
+  margin-bottom: 30px;
+  font-size: 18px;
+  max-width: 100%;
+}
+
+@media screen and (min-width: 1600px) {
+  .cta-banner {
+    font-size: 20px;
+  }
 }
