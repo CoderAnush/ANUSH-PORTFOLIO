@@ -204,9 +204,7 @@
   .scroll-down-cta .chevron {
     width: 16px;
     height: 16px;
-  transform: translateX(-50%);
-  z-index: 9;
-  position: absolute;
+  }
 }
 
 .character-model::before {
