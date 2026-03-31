@@ -2828,3 +2828,16 @@ body {
     font-size: 20px;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .cta-banner {
+    font-size: 14px;
+    margin-top: 10px;
+    line-height: 1.4;
+    max-width: 90%;
+  }
+  .contact-cta {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+}
