@@ -21,6 +21,8 @@ const Scene = () => {
   const { setLoading } = useLoading();
 
   const [character, setChar] = useState<THREE.Object3D | null>(null);
+  const [webglError, setWebglError] = useState<boolean>(false);
+
   useEffect(() => {
     if (canvasDiv.current) {
       let rect = canvasDiv.current.getBoundingClientRect();
@@ -28,10 +30,19 @@ const Scene = () => {
       const aspect = container.width / container.height;
       const scene = sceneRef.current;
 
-      const renderer = new THREE.WebGLRenderer({
-        alpha: true,
-        antialias: true,
-      });
+      let renderer: THREE.WebGLRenderer;
+      try {
+        renderer = new THREE.WebGLRenderer({
+          alpha: true,
+          antialias: true,
+        });
+      } catch (e) {
+        console.warn("WebGL context creation failed, skipping 3D scene:", e);
+        setWebglError(true);
+        setLoading(false);
+        return;
+      }
+
       renderer.setSize(container.width, container.height);
       renderer.setPixelRatio(window.devicePixelRatio);
       renderer.toneMapping = THREE.ACESFilmicToneMapping;
@@ -145,6 +156,10 @@ const Scene = () => {
       };
     }
   }, []);
+
+  if (webglError) {
+    return <></>;
+  }
 
   return (
     <>

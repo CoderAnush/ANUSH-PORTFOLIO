@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap");
 .section-container {
   width: 1300px;
 }
@@ -1009,6 +1010,99 @@ h2.landing-info-h2 {
     font-size: 75px;
   }
 }
+/* ── Scroll-Down CTA Button ─────────────────────────────────────── */
+.scroll-down-cta {
+  position: absolute;
+  bottom: 38px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  user-select: none;
+  /* entrance animation */
+  animation: ctaFadeIn 1s ease 0.6s both;
+}
+
+@keyframes ctaFadeIn {
+  from { opacity: 0; transform: translateX(-50%) translateY(20px); }
+  to   { opacity: 1; transform: translateX(-50%) translateY(0); }
+}
+
+.cta-text {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.55);
+  transition: color 0.3s ease;
+}
+
+.scroll-down-cta:hover .cta-text {
+  color: #14b8a6;
+}
+
+/* pill button wrapping the icon */
+.scroll-down-cta .cta-chevron {
+  width: 44px;
+  height: 44px;
+  padding: 10px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1.5px solid rgba(255, 255, 255, 0.15);
+  color: rgba(255, 255, 255, 0.7);
+  box-shadow:
+    0 0 0 0 rgba(20, 184, 166, 0.45),
+    0 4px 20px rgba(0, 0, 0, 0.3);
+  transition:
+    color 0.3s ease,
+    border-color 0.3s ease,
+    background 0.3s ease,
+    box-shadow 0.3s ease;
+  /* continuous bounce */
+  animation: ctaBounce 2s ease-in-out infinite,
+             ctaPulse  2.4s ease-in-out infinite;
+}
+
+.scroll-down-cta:hover .cta-chevron {
+  color: #14b8a6;
+  border-color: rgba(20, 184, 166, 0.6);
+  background: rgba(20, 184, 166, 0.12);
+  box-shadow:
+    0 0 0 8px rgba(20, 184, 166, 0.12),
+    0 6px 30px rgba(20, 184, 166, 0.35);
+  animation: none; /* stop bounce on hover for a clean feel */
+}
+
+@keyframes ctaBounce {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(6px); }
+}
+
+@keyframes ctaPulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(20, 184, 166, 0.45), 0 4px 20px rgba(0,0,0,.3); }
+  50%       { box-shadow: 0 0 0 10px rgba(20, 184, 166, 0), 0 4px 20px rgba(0,0,0,.3); }
+}
+
+/* On desktop the button shifts to bottom-center of the viewport section */
+@media screen and (min-width: 1025px) {
+  .scroll-down-cta {
+    bottom: 48px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .scroll-down-cta {
+    bottom: 24px;
+  }
+}
+/* ──────────────────────────────────────────────────────────────── */
+
 .loading-screen {
   position: fixed;
   width: 100vw;
@@ -2335,7 +2429,7 @@ div.resume-button span {
     max-height: 250px;
   }
 }
-@import url("https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap");
+
 
 :root {
   font-family: "Geist", sans-serif;
@@ -2642,15 +2736,15 @@ body {
 
 /* SCROLL DOWN CTA */
 .scroll-down-cta {
-  position: absolute;
-  bottom: 20px;
+  position: fixed;
+  bottom: 30px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
   flex-direction: column;
   align-items: center;
   cursor: pointer;
-  z-index: 9999;
+  z-index: 9999999;
   opacity: 1;
   animation: scrollBounce 2s infinite;
   text-shadow: 0px 4px 10px rgba(0,0,0,0.8);

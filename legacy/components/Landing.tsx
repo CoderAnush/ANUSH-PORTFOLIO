@@ -30,20 +30,6 @@ const Landing = ({ children }: PropsWithChildren) => {
               <div className="landing-h2-info-1">DATA SCIENTIST</div>
             </h2>
           </div>
-          <div className="scroll-down-cta" onClick={handleScrollDown}>
-            <span className="cta-text">Scroll Down</span>
-            <svg 
-              className="cta-chevron" 
-              viewBox="0 0 24 24" 
-              fill="none" 
-              stroke="currentColor" 
-              strokeWidth="2" 
-              strokeLinecap="round" 
-              strokeLinejoin="round"
-            >
-              <polyline points="6 9 12 15 18 9"></polyline>
-            </svg>
-          </div>
         </div>
         {children}
       </div>
