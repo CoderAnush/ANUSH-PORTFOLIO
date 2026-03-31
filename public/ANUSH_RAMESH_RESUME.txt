@@ -1,0 +1,99 @@
+═══════════════════════════════════════════════════════════════════════════════
+                                ANUSH RAMESH
+                            Data Scientist | AI/ML Engineer
+═══════════════════════════════════════════════════════════════════════════════
+
+📧 anushramesh2023@gmail.com
+🔗 linkedin.com/in/anushramesh07
+💻 github.com/CoderAnush
+📍 Coimbatore, India
+
+
+PROFESSIONAL SUMMARY
+═══════════════════════════════════════════════════════════════════════════════
+
+Data Scientist and AI/ML Engineer with expertise in machine learning, deep learning,
+and neural network optimization. Passionate about automata theory applications in
+compiler design and real-world AI implementations. Currently pursuing B.Tech in
+Electrical & Computer Engineering.
+
+
+EDUCATION
+═══════════════════════════════════════════════════════════════════════════════
+
+B.Tech in Electrical & Computer Engineering
+Amrita Vishwa Vidyapeetham, Coimbatore | 2023–Present
+
+Senior Secondary Schooling
+Delhi Public School, Ruby Park, Kolkata | 2009–2023
+
+
+TECHNICAL SKILLS
+═══════════════════════════════════════════════════════════════════════════════
+
+Programming Languages: Python, JavaScript, TypeScript, C++, Java
+Machine Learning: TensorFlow, PyTorch, Scikit-learn, XGBoost
+Data Analysis: Pandas, NumPy, Matplotlib, Seaborn
+Web Technologies: React, Next.js, Three.js, Vite
+Databases: PostgreSQL, MongoDB
+Tools & Platforms: Git, Docker, AWS, Google Cloud, Jupyter Notebook
+Specializations: Neural Networks, Automata Theory, Computer Vision, NLP
+
+
+PROJECTS & EXPERIENCE
+═══════════════════════════════════════════════════════════════════════════════
+
+1. NEURAL NETWORK MODEL COMPILER
+   Using Automata Theory for compilation optimization
+   • Designed compiler using DFA (Deterministic Finite Automata)
+   • Achieved 75% performance improvement in model execution
+   • Technologies: Python, TensorFlow, Automata Theory
+
+2. CRICKET MATCH PREDICTOR
+   ML Model for sports analytics
+   • Built predictive model with 85% accuracy
+   • Technologies: Python, XGBoost, Pandas
+
+3. SIGN LANGUAGE RECOGNITION SYSTEM
+   Real-time hand pose detection and translation
+   • Implemented MediaPipe for gesture recognition
+   • Technologies: Python, OpenCV, MediaPipe
+
+4. AUTOINTERN AI PLATFORM
+   AI-powered job matching and internship platform
+   • Technologies: React, Node.js, Machine Learning APIs
+
+5. IOT FIRE SUPPRESSION SYSTEM
+   Smart IoT solution for fire detection and suppression
+   • Technologies: Python, IoT Sensors, Cloud Computing
+
+6. INDUSTRIAL MONITORING DASHBOARD
+   Real-time analytics and monitoring system
+   • Technologies: React, WebSockets, Real-time data processing
+
+7. MOVIE RECOMMENDATION ENGINE
+   Collaborative filtering recommendation system
+   • Technologies: Python, Pandas, Scikit-learn
+
+8. 3D PORTFOLIO WEBSITE
+   Interactive 3D portfolio with Three.js and custom avatar
+   • Technologies: React, Three.js, GSAP, TypeScript
+
+
+AREAS OF EXPERTISE
+═══════════════════════════════════════════════════════════════════════════════
+
+✓ Machine Learning & Deep Learning
+✓ Computer Vision & Image Processing
+✓ Natural Language Processing
+✓ Neural Network Architecture & Optimization
+✓ Automata Theory & Compiler Design
+✓ Full-stack Web Development
+✓ Data Visualization & Analysis
+✓ Cloud Computing & Deployment
+
+
+═══════════════════════════════════════════════════════════════════════════════
+For the full PDF version and additional details, please visit:
+https://anush-portfolio.vercel.app
+═══════════════════════════════════════════════════════════════════════════════

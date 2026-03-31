@@ -31,6 +31,35 @@ const Contact = () => {
                 anushramesh2023@gmail.com
               </a>
             </p>
+            <p>
+              <a
+                href="/ANUSH_RAMESH_RESUME.txt"
+                download="ANUSH_RAMESH_RESUME.txt"
+                data-cursor="disable"
+                style={{
+                  display: "inline-flex",
+                  alignItems: "center",
+                  gap: "6px",
+                  padding: "8px 12px",
+                  backgroundColor: "rgb(34, 211, 238)",
+                  color: "#000",
+                  borderRadius: "6px",
+                  fontWeight: "600",
+                  textDecoration: "none",
+                  transition: "all 0.3s ease",
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.backgroundColor = "rgb(24, 191, 218)";
+                  e.currentTarget.style.transform = "translateY(-2px)";
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.backgroundColor = "rgb(34, 211, 238)";
+                  e.currentTarget.style.transform = "translateY(0)";
+                }}
+              >
+                📄 Download Resume
+              </a>
+            </p>
             <h4>Education</h4>
             <p>
               B.Tech Electrical & Computer Engineering, Amrita Vishwa Vidyapeetham, Coimbatore — 2023–Present

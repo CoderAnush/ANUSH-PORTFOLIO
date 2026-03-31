@@ -3,6 +3,11 @@ import { PropsWithChildren } from "react";
 // import "./styles/Landing.css";
 
 const Landing = ({ children }: PropsWithChildren) => {
+  const handleScrollDown = () => {
+    const aboutSection = document.getElementById("about");
+    aboutSection?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <>
       <div className="landing-section" id="landingDiv">
@@ -24,6 +29,10 @@ const Landing = ({ children }: PropsWithChildren) => {
               <div className="landing-h2-info">AI/ML ENGINEER</div>
               <div className="landing-h2-info-1">DATA SCIENTIST</div>
             </h2>
+          </div>
+          <div className="scroll-down-cta" onClick={handleScrollDown}>
+            <span>Scroll Down</span>
+            <div className="chevron"></div>
           </div>
         </div>
         {children}
