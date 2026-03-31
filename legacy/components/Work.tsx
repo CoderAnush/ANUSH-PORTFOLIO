@@ -32,6 +32,34 @@ const projects = [
     tools: 'Next.js, Three.js, TypeScript, GSAP',
     image: '/images/portfolio.jpg',
     link: 'https://github.com/CoderAnush/ANUSH-PORTFOLIO'
+  },
+  {
+    title: 'AutoIntern AI',
+    category: 'AI Job Aggregation Platform',
+    tools: 'FastAPI, Scrapy, React, PostgreSQL, Redis, Elasticsearch, BERT',
+    image: '/images/autointern.svg',
+    link: 'https://github.com/CoderAnush/AutoIntern'
+  },
+  {
+    title: 'Neural Network Compiler',
+    category: 'Compiler Design & Automata Theory',
+    tools: 'Python, PyTorch, DFA, Graph Optimization, Benchmarking',
+    image: '/images/nn-compiler.svg',
+    link: 'https://github.com/CoderAnush/Compiling-Neural-Network-Models-Using-Automata-Theory'
+  },
+  {
+    title: 'IoT Fire Suppression System',
+    category: 'Industrial IoT & Embedded Systems',
+    tools: 'ESP32, Raspberry Pi Pico, Arduino, MQTT, HTML/CSS/JavaScript',
+    image: '/images/iot-fire.svg',
+    link: 'https://github.com/CoderAnush/IoT-Based-Indoor-Hazard-Monitoring-and-Automated-Fire-Suppression-System-Using-MQTT'
+  },
+  {
+    title: 'Industrial IoT Dashboard',
+    category: 'Real-Time Monitoring & ML',
+    tools: 'React, FastAPI, Python, Machine Learning, Real-time Analytics',
+    image: '/images/openlab-dashboard.svg',
+    link: 'https://github.com/CoderAnush/OPENLAB-PROJECT'
   }
 ];
 
