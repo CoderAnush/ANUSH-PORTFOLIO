@@ -5,7 +5,7 @@ import Career from "./Career";
 import Contact from "./Contact";
 import Cursor from "./Cursor";
 import Landing from "./Landing";
-import Navbar from "./Navbar";
+import Navbar, { smoother } from "./Navbar";
 import SocialIcons from "./SocialIcons";
 import WhatIDo from "./WhatIDo";
 import Work from "./Work";
@@ -48,8 +48,12 @@ const MainContainer = ({ children }: PropsWithChildren) => {
   }, [isDesktopView]);
 
   const handleScrollDown = () => {
-    const aboutSection = document.getElementById("about");
-    aboutSection?.scrollIntoView({ behavior: "smooth" });
+    if (smoother) {
+      smoother.scrollTo("#about", true, "top top");
+    } else {
+      const aboutSection = document.getElementById("about");
+      aboutSection?.scrollIntoView({ behavior: "smooth" });
+    }
   };
 
   return (
