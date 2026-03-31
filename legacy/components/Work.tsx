@@ -16,14 +16,14 @@ const projects = [
     title: 'Live Sign Language Transcript',
     category: 'Computer Vision & Deep Learning',
     tools: 'Python, MediaPipe, LSTM, OpenCV',
-    image: '/images/sign-lang.jpg',
+    image: '/images/sign-lang.svg',
     link: 'https://github.com/CoderAnush/LIVE-SIGN-LANGUAGE-TRANSCRIPT'
   },
   {
     title: 'Cricket Match Predictor',
     category: 'Predictive Machine Learning',
     tools: 'Python, XGBoost, Pandas, Numpy',
-    image: '/images/cricket.jpg',
+    image: '/images/cricket.svg',
     link: 'https://github.com/CoderAnush/ML-PROJECT'
   },
   {
