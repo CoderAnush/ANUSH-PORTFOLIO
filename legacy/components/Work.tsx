@@ -70,11 +70,11 @@ const projects = [
     link: 'https://github.com/CoderAnush/OPENLAB-PROJECT'
   },
   {
-    title: 'Biomedical Waste Segregation',
+    title: 'Biomedical Waste Segregation & Bin Recommendation',
     category: 'Computer Vision & Healthcare AI',
-    tools: 'Python, YOLOv8, Roboflow, OpenCV, Power BI, Streamlit',
-    description: 'Built an AI-powered biomedical waste monitoring system using YOLOv8 and Roboflow for real-time object detection. Automated waste classification into disposal bins with CSV logging for Power BI-driven analytics and hospital-grade compliance reporting.',
-    image: '/images/bio-waste.svg',
+    tools: 'Python, YOLOv11, Roboflow, OpenCV, Power BI, Streamlit',
+    description: 'AI-powered biomedical waste monitoring system using YOLOv11 and Roboflow for real-time object detection. Automatically classifies waste items into 8 categories and recommends the correct disposal bin. Achieved 95.5% mAP@50 with 91.4% Precision and 95.4% Recall. Features CSV logging and Power BI dashboards for analytics.',
+    image: '/images/bio-waste-app.png',
     link: 'https://github.com/CoderAnush/Compiling-Neural-Network-Models-Using-Automata-Theory'
   }
 ];
