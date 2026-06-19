@@ -21,33 +21,26 @@ const Career = () => {
               </div>
               <h3>June 2026 · Chennai, India</h3>
             </div>
-            <p>
-              Developed an AI-based Biomedical Waste Segregation Monitoring System for automated waste classification using Computer Vision. Built and annotated a biomedical waste dataset of 9,124 images across 8 categories using Roboflow. Collaborated in training, testing, and validation of a YOLOv11 Nano object detection model, achieving 95.5% mAP@50 with 91.4% Precision and 95.4% Recall.
-            </p>
-            <a
-              href="/project_report.pdf"
-              target="_blank"
-              rel="noreferrer"
-              data-cursor="disable"
-              style={{
-                display: 'inline-flex',
-                alignItems: 'center',
-                gap: '8px',
-                marginTop: '14px',
-                padding: '8px 18px',
-                background: 'rgba(100, 220, 180, 0.1)',
-                border: '1px solid rgba(100, 220, 180, 0.35)',
-                borderRadius: '8px',
-                color: '#64dcb4',
-                fontSize: '13px',
-                fontWeight: '600',
-                textDecoration: 'none',
-                letterSpacing: '0.03em',
-                transition: 'background 0.2s'
-              }}
-            >
-              📄 View Project Report
-            </a>
+            <div style={{ width: '40%' }}>
+              <p style={{ width: '100%', margin: 0 }}>
+                Developed an AI-based Biomedical Waste Segregation Monitoring System for automated waste classification using Computer Vision. Built and annotated a biomedical waste dataset of 9,124 images across 8 categories using Roboflow. Collaborated in training, testing, and validation of a YOLOv11 Nano object detection model, achieving 95.5% mAP@50 with 91.4% Precision and 95.4% Recall.
+              </p>
+              <a
+                href="/project_report.pdf"
+                target="_blank"
+                rel="noreferrer"
+                data-cursor="disable"
+                className="report-btn"
+              >
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                  <polyline points="14 2 14 8 20 8"/>
+                  <line x1="12" y1="18" x2="12" y2="12"/>
+                  <line x1="9" y1="15" x2="15" y2="15"/>
+                </svg>
+                View Project Report
+              </a>
+            </div>
           </div>
 
           <div className="career-info-box">
