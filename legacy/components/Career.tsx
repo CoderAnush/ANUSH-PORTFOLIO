@@ -16,13 +16,13 @@ const Career = () => {
         <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Data Science Intern</h4>
-                <h5>L&T Technology Services</h5>
+                <h4>AI &amp; Edge Computing Intern</h4>
+                <h5>Larsen &amp; Toubro</h5>
               </div>
-              <h3>05/2025 - 06/2025</h3>
+              <h3>June 2026 · Chennai, India</h3>
             </div>
             <p>
-              Worked on real-world industrial data science problems at Larsen & Toubro Technology Services. Applied computer vision and machine learning techniques including object detection using YOLO and Roboflow, data analysis with Power BI dashboards, and end-to-end AI pipeline development for industrial automation use cases.
+              Developed an AI-based Biomedical Waste Segregation Monitoring System for automated waste classification using Computer Vision. Built and annotated a biomedical waste dataset of 9,124 images across 8 categories using Roboflow. Collaborated in training, testing, and validation of a YOLOv11 Nano object detection model, achieving 95.5% mAP@50 with 91.4% Precision and 95.4% Recall.
             </p>
           </div>
 
