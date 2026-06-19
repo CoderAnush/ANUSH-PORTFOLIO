@@ -13,6 +13,19 @@ const Career = () => {
             <div className="career-dot"></div>
           </div>
           
+        <div className="career-info-box">
+            <div className="career-info-in">
+              <div className="career-role">
+                <h4>Data Science Intern</h4>
+                <h5>L&T Technology Services</h5>
+              </div>
+              <h3>05/2025 - 06/2025</h3>
+            </div>
+            <p>
+              Worked on real-world industrial data science problems at Larsen & Toubro Technology Services. Applied computer vision and machine learning techniques including object detection using YOLO and Roboflow, data analysis with Power BI dashboards, and end-to-end AI pipeline development for industrial automation use cases.
+            </p>
+          </div>
+
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">

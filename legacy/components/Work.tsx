@@ -68,6 +68,14 @@ const projects = [
     description: 'Deployed an interactive full-stack dashboard parsing live IoT sensor data, enabling predictive maintenance through integrated ML insights.',
     image: '/images/openlab-dashboard.svg',
     link: 'https://github.com/CoderAnush/OPENLAB-PROJECT'
+  },
+  {
+    title: 'Biomedical Waste Segregation',
+    category: 'Computer Vision & Healthcare AI',
+    tools: 'Python, YOLOv8, Roboflow, OpenCV, Power BI, Streamlit',
+    description: 'Built an AI-powered biomedical waste monitoring system using YOLOv8 and Roboflow for real-time object detection. Automated waste classification into disposal bins with CSV logging for Power BI-driven analytics and hospital-grade compliance reporting.',
+    image: '/images/bio-waste.svg',
+    link: 'https://github.com/CoderAnush/Compiling-Neural-Network-Models-Using-Automata-Theory'
   }
 ];
 
