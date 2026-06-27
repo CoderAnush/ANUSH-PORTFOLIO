@@ -1,6 +1,6 @@
 ═══════════════════════════════════════════════════════════════════════════════
                                 ANUSH RAMESH
-                       AI/ML Engineer | Data Scientist
+                       AI/ML | Computer Vision | Data Science
 ═══════════════════════════════════════════════════════════════════════════════
 
 📧 anushramesh2023@gmail.com
@@ -13,22 +13,25 @@
 EDUCATION
 ═══════════════════════════════════════════════════════════════════════════════
 
-B.Tech in Electrical & Computer Engineering
-Amrita Vishwa Vidyapeetham, Coimbatore | 2023–Present
+B.Tech in Electrical and Computer Engineering
+Amrita Vishwa Vidyapeetham, Coimbatore | Aug. 2023 – April 2027
 
 
 TECHNICAL SKILLS
 ═══════════════════════════════════════════════════════════════════════════════
 
-ML & AI: Retrieval-Augmented Generation (RAG), Vector Databases (Qdrant),
-        Knowledge Graphs, Edge AI, Random Forest, YOLOv11, LSTM
-NLP & CV: Text Embeddings, Semantic Search, LangChain, LangGraph, OpenCV,
-        MediaPipe, Roboflow, Object Detection
-Embedded & IoT: STM32, Microcontrollers, UART Communication, Real-Time Inference,
-        MQTT Protocols, Hardware Actuators
-Languages & DBs: Python, C/C++, SQL, JavaScript, TypeScript, PostgreSQL,
-        MongoDB, Supabase
-Cloud & Deployment: FastAPI, Streamlit, Git, GitHub, Docker, Vercel, Render
+Programming Languages: Python, C/C++, SQL
+Machine Learning & Deep Learning: Scikit-Learn, TensorFlow, Keras, PyTorch,
+        Deep Learning, Model Evaluation
+Computer Vision: OpenCV, YOLOv11, Object Detection, Image Classification,
+        Dataset Annotation, Data Augmentation
+Data Analysis & Visualization: Pandas, NumPy, Matplotlib, Power BI,
+        Exploratory Data Analysis (EDA)
+AI Frameworks & Agentic AI: LangChain, LangGraph, Agentic AI, RAG,
+        Vector Databases
+Embedded Systems & IoT: STM32, ESP32, Arduino, Raspberry Pi Pico,
+        UART Communication, MQTT Protocols, Hardware Actuators
+Development & Deployment: Streamlit, FastAPI, Git, GitHub, Roboflow, Vercel, Render
 
 
 EXPERIENCE
@@ -36,23 +39,36 @@ EXPERIENCE
 
 1. AI & EDGE COMPUTING INTERN | Larsen & Toubro (L&T)
    June 2026 | Chennai, India
-   • Developed a YOLOv11-based Biomedical Waste Segregation Monitoring System for
-     automated visual waste classification.
-   • Built and annotated a custom dataset comprising 9,124 images across 8 waste
-     categories using Roboflow.
-   • Achieved 95.5% mAP@50 and 91.4% Precision on validation sets; deployed
-     Streamlit and Power BI dashboards for real-time reporting.
+   • Developed an AI-based Biomedical Waste Segregation Monitoring System for
+     automated biomedical waste classification using Computer Vision techniques.
+   • Built and annotated a biomedical waste dataset comprising 9,124 images
+     across 8 waste categories using Roboflow.
+   • Trained, tested, and evaluated a custom YOLOv11 Nano object detection model
+     for biomedical waste detection and performance validation.
+   • Presented project methodology, implementation, and results to industry mentors.
 
 2. AI/ML INTERN | Edunet Foundation
    June 2025 – July 2025 | Remote
    • Completed a 4-week AICTE Microsoft internship focused on AI, ML, and Azure Cloud.
-   • Trained and evaluated predictive classification models using Scikit-Learn and Pandas.
+   • Built a supervised ML model in Python for cricket match outcome prediction
+     using data preprocessing, feature engineering, and model evaluation.
 
 
 PROJECTS
 ═══════════════════════════════════════════════════════════════════════════════
 
-1. REPOMIND — AI-powered Code Analysis & Search Platform
+1. BIOMEDICAL WASTE SEGREGATION MONITORING SYSTEM
+   • Developed an end-to-end Computer Vision and Object Detection system for
+     automated biomedical waste classification and disposal-bin recommendation.
+   • Built and annotated a dataset of 9,124 images across 8 biomedical waste
+     classes using Roboflow.
+   • Achieved 95.5% mAP@50, 91.4% Precision, and 95.4% Recall through training
+     and evaluation of a custom object detection model.
+   • Developed Streamlit and Power BI dashboards for real-time monitoring,
+     reporting, and waste analytics.
+   • Technologies: Python, YOLOv11, OpenCV, Streamlit, Power BI
+
+2. REPOMIND — AI-powered Code Analysis & Search Platform
    • Developed a semantic search engine (RAG) using LangGraph and Qdrant Cloud
      for interactive codebase Q&A with source citations.
    • Constructed a Graph Database parser to automatically map and visualize complex
@@ -62,29 +78,20 @@ PROJECTS
    • Integrated secure GitHub OAuth and background workers for seamless codebase imports.
    • Technologies: Python, LangGraph, Qdrant Cloud, FastAPI, PostgreSQL, React Flow
 
-2. AI-BASED GAS & SMOKE EARLY WARNING SYSTEM
-   • Engineered an Edge ML early warning system utilizing a trained Random Forest model.
+3. AI-BASED GAS & SMOKE EARLY WARNING SYSTEM
+   • Engineered an Edge ML early warning system utilizing a trained Random Forest classifier.
    • Collected and processed a dataset of 28,000+ gas sensor readings for model training.
    • Configured bidirectional UART communication between PC inference service and STM32.
    • Deployed hardware actuators (exhaust fans, alarms) triggered automatically by UART inference signals.
    • Technologies: Python, Random Forest, STM32, UART, Actuators
 
-3. NEURAL NETWORK MODEL COMPILER
-   • Programmed a custom deep learning compiler using Deterministic Finite Automata (DFA) models.
-   • Implemented graph representation algorithms to compress and optimize model computational layers.
-   • Achieved a 75% performance improvement in inference runtime speed for PyTorch neural models.
-   • Technologies: Python, PyTorch, Automata Theory, Graph Optimization
-
-4. BIOMEDICAL WASTE SEGREGATION SYSTEM
-   • Trained and optimized a YOLOv11 Nano object detection model for hospital waste management.
-   • Designed and integrated live camera capture feeds for real-time visual waste classification.
-   • Deployed Streamlit and Power BI dashboards for real-time monitoring and reporting.
-   • Technologies: Python, YOLOv11, OpenCV, Streamlit, Power BI
-
-5. LIVE ASL TRANSCRIPTION SYSTEM
-   • Designed a real-time American Sign Language transcription system using MediaPipe and TensorFlow.
-   • Trained an LSTM model on sequence landmark datasets to recognize gestures with high temporal fidelity.
-   • Technologies: Python, TensorFlow, OpenCV, MediaPipe, LSTM
+4. LIVE SIGN LANGUAGE TRANSCRIPTION SYSTEM
+   • Developed a real-time American Sign Language (ASL) transcription system using
+     deep learning techniques.
+   • Designed an RNN-LSTM architecture for sequential gesture recognition and
+     real-time text generation.
+   • Implemented OpenCV-based gesture capture and preprocessing pipelines for live inference.
+   • Technologies: Python, TensorFlow, OpenCV, RNN, LSTM
 
 
 ═══════════════════════════════════════════════════════════════════════════════

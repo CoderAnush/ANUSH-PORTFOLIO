@@ -1,0 +1,190 @@
+%-------------------------
+% Resume in Latex
+% Author : Anush Ramesh
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{charter}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins to ensure the name is fully visible and not cut off
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.0in}
+\addtolength{\topmargin}{-0.65in}
+\addtolength{\textheight}{1.3in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-5pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-4pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge \scshape Anush Ramesh} \\ \vspace{3pt}
+    {\small \textbf{AI/ML \hspace{2pt}\textbar\hspace{2pt} Computer Vision \hspace{2pt}\textbar\hspace{2pt} Data Science}} \\ \vspace{3pt}
+    \small 6290228918 $|$ \href{mailto:anushramesh2023@gmail.com}{anushramesh2023@gmail.com} $|$ 
+    \href{https://www.linkedin.com/in/anushramesh07}{LinkedIn} $|$
+    \href{https://github.com/CoderAnush}{GitHub} $|$
+    \href{https://anushramesh.netlify.app}{Portfolio}
+\end{center}
+\vspace{-15pt}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Amrita Vishwa Vidyapeetham}{Coimbatore, Tamil Nadu}
+      {Bachelor of Technology in Electrical and Computer Engineering}{Aug. 2023 -- April 2027}
+  \resumeSubHeadingListEnd
+\vspace{-5pt}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {AI/ML Intern}{June 2025 -- July 2025}
+      {Edunet Foundation}{Remote}
+      \resumeItemListStart
+        \resumeItem{Completed a 4-week AICTE Microsoft internship focused on AI, ML, and Azure Cloud.}
+        \resumeItem{Built a supervised ML model in Python for cricket match outcome prediction using data preprocessing, feature engineering, and model evaluation.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {AI \& Edge Computing Intern}{June 2026}
+      {Larsen \& Toubro}{Chennai, India}
+      \resumeItemListStart
+        \resumeItem{Developed an AI-based Biomedical Waste Segregation Monitoring System for automated biomedical waste classification using Computer Vision techniques.}
+        \resumeItem{Built and annotated a biomedical waste dataset comprising 9,124 images across 8 waste categories using Roboflow.}
+        \resumeItem{Trained, tested, and evaluated a custom YOLOv11 Nano object detection model for biomedical waste detection and performance validation.}
+        \resumeItem{Presented project methodology, implementation, and results to industry mentors.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+\vspace{-5pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      
+      \resumeProjectHeading
+          {\textbf{Biomedical Waste Segregation Monitoring System} $|$ \emph{Python, YOLOv11, OpenCV, Streamlit, Power BI}}{}
+          \resumeItemListStart
+            \resumeItem{Developed an end-to-end Computer Vision and Object Detection system for automated biomedical waste classification and disposal-bin recommendation.}
+            \resumeItem{Built and annotated a dataset of 9,124 images across 8 biomedical waste classes using Roboflow.}
+            \resumeItem{Achieved 95.5\% mAP@50, 91.4\% Precision, and 95.4\% Recall through training and evaluation of a custom object detection model.}
+            \resumeItem{Developed Streamlit and Power BI dashboards for real-time monitoring, reporting, and waste analytics.}
+          \resumeItemListEnd
+          \small{\href{https://github.com/CoderAnush/AI-BASED-MEDICAL-WASTE-SEGREGATION-MONITORING-SYSTEM-FOR-MULTI-SPECIALITY-HOSPITALS}{\textit{GitHub Link} - Biomedical Waste Segregation Project}} \vspace{2pt}
+
+      \resumeProjectHeading
+          {\textbf{RepoMind — AI-powered Code Analysis \& Search Platform} $|$ \emph{Python, LangGraph, Qdrant Cloud, FastAPI, PostgreSQL, React Flow}}{}
+          \resumeItemListStart
+            \resumeItem{Developed a semantic search engine (RAG) using LangGraph and Qdrant Cloud for interactive codebase Q\&A with source citations.}
+            \resumeItem{Constructed a Graph Database parser to automatically map and visualize complex multi-file repository architecture relationships.}
+            \resumeItem{Built security auditing pipeline scanning repositories with line-by-line recommendation logs.}
+            \resumeItem{Integrated secure GitHub OAuth and background workers for seamless codebase imports.}
+          \resumeItemListEnd
+          \small{\href{https://github.com/CoderAnush/RepoMind}{\textit{GitHub Link} - RepoMind Project}} \vspace{2pt}
+
+      \resumeProjectHeading
+          {\textbf{AI-Based Gas \& Smoke Early Warning System} $|$ \emph{Python, Random Forest, STM32, UART, Actuators}}{}
+          \resumeItemListStart
+            \resumeItem{Engineered an Edge ML early warning system utilizing a trained Random Forest classifier.}
+            \resumeItem{Collected and processed a dataset of 28,000+ gas sensor readings for model training.}
+            \resumeItem{Configured bidirectional UART communication between PC inference service and STM32 microcontroller.}
+            \resumeItem{Deployed hardware actuators (exhaust fans, alarms) triggered automatically by UART inference signals.}
+          \resumeItemListEnd
+          \small{\href{https://github.com/CoderAnush/OPENLAB-PROJECT}{\textit{GitHub Link} - Gas \& Smoke Early Warning Project}} \vspace{2pt}
+
+      \resumeProjectHeading
+          {\textbf{Live Sign Language Transcription System} $|$ \emph{Python, TensorFlow, OpenCV, RNN, LSTM}}{}
+          \resumeItemListStart
+            \resumeItem{Developed a real-time American Sign Language (ASL) transcription system using deep learning techniques.}
+            \resumeItem{Designed an RNN-LSTM architecture for sequential gesture recognition and real-time text generation.}
+            \resumeItem{Implemented OpenCV-based gesture capture and preprocessing pipelines for live inference.}
+          \resumeItemListEnd
+          \small{\href{https://github.com/CoderAnush/LIVE-SIGN-LANGUAGE-TRANSCRIPT}{\textit{GitHub Link} - Sign Language Transcription Project}} \vspace{2pt}
+
+    \resumeSubHeadingListEnd
+\vspace{-5pt}
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming Languages:} Python, C/C++, SQL \\
+     \textbf{Machine Learning \& Deep Learning:} Scikit-Learn, TensorFlow, Keras, PyTorch, Deep Learning, Model Evaluation \\
+     \textbf{Computer Vision:} OpenCV, YOLOv11, Object Detection, Image Classification, Dataset Annotation, Data Augmentation \\
+     \textbf{Data Analysis \& Visualization:} Pandas, NumPy, Matplotlib, Power BI, Exploratory Data Analysis (EDA) \\
+     \textbf{AI Frameworks \& Agentic AI:} LangChain, LangGraph, Agentic AI, RAG, Vector Databases \\
+     \textbf{Embedded Systems \& IoT:} STM32, ESP32, Arduino, Raspberry Pi Pico, UART Communication, MQTT Protocols, Hardware Actuators \\
+     \textbf{Development \& Deployment:} Streamlit, FastAPI, Git, GitHub, Roboflow, Vercel, Render
+    }}
+ \end{itemize}
+
+\end{document}
